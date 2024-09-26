@@ -1,0 +1,42 @@
+.body-itme{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.searching-box{
+  margin-left: 9%;
+  margin-top: 15px;
+   margin-bottom: 10px;
+
+}
+.styled-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .styled-input:focus {
+    border-color: #ff0000;
+  }
+  
+  /* Styling for the button */
+  .styled-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #c46959;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-button:hover {
+    background-color: #ff0303;
+  }

@@ -5,8 +5,13 @@ import Home from "./component/home";
 import About from "./component/about";
 import Services from "./component/services";
 import Contact from "./component/contact";
-import Error from "./component/erro";
+// import Error from "./component/erro";
 import Followus from "./component/foolowus";
+import  Fullac from "./component/service-compo/fulllac";
+import Clean from "./component/service-compo/clean";
+import Hall from "./component/service-compo/hall";
+import Goodfood from "./component/service-compo/goodfood";
+import Google from "./component/service-compo/google";
 
 const router = createBrowserRouter(
   [
@@ -30,8 +35,14 @@ const router = createBrowserRouter(
       element:<>
        <Services/>
       <Navigation/>
+      </>,
+      children:[
+        {
+          path:"fullac",
+          element:<Fullac/>
+        }
+      ]
      
-      </>
     },
     {
       
@@ -39,7 +50,13 @@ const router = createBrowserRouter(
       element:<>
       <Contact/>
       <Navigation/>
-      </>
+      </>,
+      children:[
+        {
+          path:"google",
+          element:<Google/>
+        }
+      ]
     },
     {
       
@@ -56,14 +73,28 @@ const router = createBrowserRouter(
      <Error/>
       </>
     }
-    ,
-    {
+    
+    // {
       
-      path:"/:id",
-      element:<>
-     <Error/>
-      </>
-    }
+    //   path:"/:id",
+    //   element:<>
+    //  <Error/>
+    //   </>
+    // }
+
+    // import React from 'react'
+// import { useParams } from 'react-router-dom'
+// function Error() {
+//     let  {id} = useParams()
+    
+//   return (
+//     <div>
+//       <h1>SOME THING WENT WORNG : 🤣 {id}</h1>
+//     </div>
+//   )
+// }
+
+// export default Error
   ]
 )
 function App() {

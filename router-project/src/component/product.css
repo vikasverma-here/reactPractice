@@ -1,0 +1,23 @@
+.container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.product{
+    padding: 10px;
+    width: 20vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.product img{
+    width: 15vw;
+    height: 25vh;
+    
+}
+
+

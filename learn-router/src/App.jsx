@@ -15,64 +15,69 @@ import Google from "./component/service-compo/google";
 
 const router = createBrowserRouter(
   [
-    {
-      path:"/",
-      element: <>
-        <Home/>
-      <Navigation/>
+    // {
+    //   path:"/",
+    //   element: <>
+    //     <Home/>
+    //   <Navigation/>
     
-      </>
-    },
-    {
-      path:"/about",
-      element: <>
-      <About/>
-      <Navigation/>
-      </> 
-    },
-    {
-      path:"/services",
-      element:<>
-       <Services/>
-      <Navigation/>
-      </>,
-      children:[
-        {
-          path:"fullac",
-          element:<Fullac/>
-        }
-      ]
+    //   </>
+    // },
+    // {
+    //   path:"/about",
+    //   element: <>
+    //   <About/>
+    //   <Navigation/>
+    //   </> 
+    // },
+    // {
+    //   path:"/services",
+    //   element:<>
+    //    <Services/>
+    //   <Navigation/>
+    //   </>,
+    //   children:[
+    //     {
+    //       path:"fullac",
+    //       element:<Fullac/>
+    //     }
+    //   ]
      
-    },
-    {
+    // },
+    // {
       
-      path:"/contact",
-      element:<>
-      <Contact/>
-      <Navigation/>
-      </>,
-      children:[
-        {
-          path:"google",
-          element:<Google/>
-        }
-      ]
-    },
-    {
+    //   path:"/contact",
+    //   element:<>
+    //   <Contact/>
+    //   <Navigation/>
+    //   </>,
+    //   children:[
+    //     {
+    //       path:"google",
+    //       element:<Google/>
+    //     }
+    //   ]
+    // },
+    // {
       
-      path:"/followus",
-      element:<>
-      <Followus/>
-      <Navigation/>
-      </>
-    },
-    {
+    //   path:"/followus",
+    //   element:<>
+    //   <Followus/>
+    //   <Navigation/>
+    //   </>
+    // },
+    // {
       
-      path:"/:id",
-      element:<>
-     <Error/>
-      </>
-    }
+    //   path:"/:id",
+    //   element:<>
+    //  <Error/>
+    //   </>
+    // }
+    
+
+
+
+
     
     // {
       

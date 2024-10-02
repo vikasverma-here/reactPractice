@@ -45,6 +45,7 @@ function App() {
   
   <Counter/>
     </div>
+    
   );
 }
 

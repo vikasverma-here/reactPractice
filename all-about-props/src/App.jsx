@@ -1,9 +1,10 @@
 
-import { Children, useState } from 'react';
+// import { Children, useState } from 'react';
 import './App.css'
 // import Passing from './passing'
 // import Card from './Card';
-import Counter from './counter';
+// import Counter from './counter';
+import Lifting from './state-lifting';
 
 // function App() {
 //  return(
@@ -33,20 +34,35 @@ import Counter from './counter';
 
 // !!!! passing function as a prop to chld 
 
-function App() {
-  let [count ,setcount] = useState("0")
-  function handlechange (){
-    setcount(count++)
-  }
-  return (
-    <div className="container">
-  <Counter  text="click me " changer={handlechange}/>
-  <h1>{count}</h1>
+// function App() {
+//   let [count ,setcount] = useState("0")
+//   function handlechange (){
+//     setcount(count++)
+//   }
+//   return (
+//     <div className="container">
+//   <Counter  text="click me " changer={handlechange}/>
+//   <h1>{count}</h1>
   
-  <Counter/>
-    </div>
+//   <Counter/>
+//     </div>
     
+//   );
+// }
+
+// !! STATE LIFTING OR PASSNING PROPS CHILD TO PARENT ----->
+import React, { useState } from 'react';
+
+function App() {
+  let [name, setfift] = useState(''); // useState needs to be imported from React
+  
+  return (
+    <>
+  
+    {/* // Passing 'name' and 'setfift' correctly */}
+    <Lifting val={name} valchange={setfift} /> 
+    <p>parent : {name}</p>
+    </>
   );
 }
-
 export default App

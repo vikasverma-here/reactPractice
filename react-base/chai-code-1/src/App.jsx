@@ -17,8 +17,8 @@ let handleClickrem =()=>{
   return (
   <>
   <h1>VALUE : {val}</h1>
- <button onClick={handleClickadd} > click me  </button>
- <button onClick={handleClickrem} > click me  </button>
+ <button onClick={handleClickadd}  > click me  </button>
+ <button  onClick={handleClickrem} > click me  </button>
   </>
   )
 }

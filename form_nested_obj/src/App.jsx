@@ -23,13 +23,35 @@ function App() {
   }
   function handleChange(e){
     setForm({
-      ...form.artwork,
-     title:e.target.value
+      ...form,
+      artwork: {
+        ...form.artwork,
+        title: e.target.value
+      }
+    })
+  }
+  function handleChnage(e){
+    setForm({
+      ...form,
+      artwork: {
+        ...form.artwork,
+        city: e.target.value
+      }
+    })
+  }
+  function handleChnage(e){
+    setForm({
+      ...form,
+      artwork: {
+        ...form.artwork,
+        image: e.target.value
+      }
     })
   }
 
   return (
-    <>
+    
+    < >
     <label >
       Name :
       <input type="text"  value={form.name} onChange={handleChnage} />

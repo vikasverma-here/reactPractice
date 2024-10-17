@@ -92,3 +92,12 @@ height: 100%;
   font-size: 100px;
   font-weight: 800;
 }
+a.active{
+  color: red;
+  font-size: 25px ;
+  font-weight: 900;
+}
+ul>li{
+  list-style: none;
+}
+

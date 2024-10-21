@@ -29,7 +29,7 @@ function App() {
   const [theme , setTheme ] = useState('light')
   return (
     <themeContext.Provider value={{theme , setTheme}}>
-    <div className="container" style={{backgroundColor:theme==='light'? 'red' :'green'}} >
+    <div className="container" style={{backgroundColor:theme==='light'? 'white' :'black'}} >
     <Child1/>
     </div>
    

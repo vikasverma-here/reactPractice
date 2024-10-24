@@ -1,0 +1,88 @@
+.ai-img-generator {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Ensure text color is white */
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #2c3e50, #34495e, #5c677d, #3a506b); /* Darker gradient background */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+  }
+  
+  .header span {
+    color: #ecf0f1; /* Light color for the span text */
+  }
+  
+  .img_loading {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+  
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image img {
+    max-width: 100%;
+ 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin: 20px auto; /* Center the search box */
+    padding: 10px;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-search {
+    flex: 1; /* Make the input expand */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .input-search:focus {
+    border-color: #007BFF; /* Blue border when focused */
+  }
+  
+  .generate-btn {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  
